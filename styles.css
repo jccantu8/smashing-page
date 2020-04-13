@@ -1,0 +1,234 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ************ */
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+header nav ul {
+	/* Box-model */
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	width: 100%;
+	height: 100%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+
+	/* Visual */
+	background-color: #404040;
+
+	/* Typography */
+	font-size: 2rem;
+	color: #B8B8B8;
+}
+
+main .latest-articles {
+	/* Box-model */
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+	width: 100%;
+	height: 500px;
+
+	/* Visual */
+	background-color: #303030;
+	text-align: center;
+
+	/* Typography */
+	font-size: 3rem;
+	color: #B8B8B8;
+}
+
+main .latest-articles div header{
+	/* Box-model */
+	padding-top: 10%;
+	padding-bottom: 10%;
+
+	/* Visual */
+	background-color: #202020;
+	text-align: center;
+}
+
+main .other-articles {
+	/* Box-model */
+	display: grid;
+	width: 60%;
+	height: 100%;
+	margin: auto;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: "post1 post2   post3 post4"
+						 "AD1   AD1     post5 post6"
+						 "post7 post8   AD2   AD2  ";
+	justify-items: stretch;
+	align-items: stretch;
+
+	/* Visual */
+	background-color: red;
+
+	/* Typography */
+	font-size: 2rem;
+	color: #B8B8B8;
+}
+
+main .other-articles .post {
+	/* Box-model */
+	padding-top: 50%;
+	padding-bottom: 50%;
+
+	/* Visual */
+	background-color: #808080;
+	text-align: center;
+}
+
+main .other-articles .post.one {
+	grid-area: post1;
+}
+
+main .other-articles .post.two {
+	grid-area: post2;
+}
+
+main .other-articles .post.three {
+	grid-area: post3;
+}
+
+main .other-articles .post.four {
+	grid-area: post4;
+}
+
+main .other-articles .post.five {
+	grid-area: post5;
+}
+
+main .other-articles .post.six {
+	grid-area: post6;
+}
+
+main .other-articles .post.seven {
+	grid-area: post7;
+}
+
+main .other-articles .post.eight {
+	grid-area: post8;
+}
+
+main .other-articles .ad {
+	/* Box-model */
+	padding-top: 50%;
+	padding-bottom: 50%;
+
+	/* Visual */
+	background-color: #303030;
+	text-align: center;
+}
+
+main .other-articles .ad.one {
+	grid-area: AD1;
+}
+
+main .other-articles .ad.two {
+	grid-area: AD2;
+}
+
+main .person-of-the-week {
+	/* Box-model */
+	width: 60%;
+	height: 400px;
+	margin: auto;
+
+	/* Visual */
+	background-color: #B0B0B0;
+	text-align: center;
+
+	/* Typography */
+	font-size: 2rem;
+	color: #303030;
+}
+
+main .community-links {
+	/* Box-model */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: "link1 link2"
+						 "link3 link4"
+						 "link5 link6";
+	justify-items: stretch;
+	align-items: stretch;
+	width: 60%;
+	height: 1000px;
+	margin: auto;
+
+	/* Visual */
+	background-color: #C0C0C0;
+	text-align: center;
+
+	/* Typography */
+	font-size: 2rem;
+	color: #303030;
+}
+
+main .newsletter {
+	/* Box-model */
+	width: 60%;
+	height: 800px;
+	margin: auto;
+
+	/* Visual */
+	background-color: #303030;
+	text-align: center;
+	border-radius: 5px;
+
+	/* Typography */
+	font-size: 2rem;
+	color: #B8B8B8;
+}
